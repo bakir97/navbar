@@ -1,0 +1,33 @@
+#hero {
+  position: relative;
+  margin-top: 4rem;
+  height: calc(100vh - 4rem);
+  width: 100%;
+  .picture {
+    -webkit-clip-path: polygon(23% 0, 100% 0%, 79% 100%, 0% 100%);
+    clip-path: polygon(23% 0, 100% 0%, 79% 100%, 0% 100%);
+    background: $gradient-header,
+      url("https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    h1 {
+      font-size: 10rem;
+      background: $gradient-text;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .arrow {
+      position: absolute;
+      bottom: 10px;
+      left: 45%;
+      color: white;
+      font-size: 3rem;
+    }
+  }
+}

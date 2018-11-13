@@ -1,0 +1,17 @@
+@media screen and (max-width: 1400px) {
+  #hero {
+    .picture {
+      -webkit-clip-path: none;
+      clip-path: none;
+      h1 {
+        font-size: 1rem;
+      }
+    }
+  }
+  .biceps {
+    grid-template-columns: 1fr;
+    &-picture {
+      height: 300px;
+    }
+  }
+}
